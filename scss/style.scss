@@ -16,13 +16,20 @@
 body {
     background-color: #f0f2ea;
 }
-header{
+.head__container {
+    max-width: 600px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    max-width: 600px;
     img {
+        width: 90%;
         padding: 6% 0;
+        margin: 0 auto;
+        @media (max-width: 450px) {
+            width: 80%;
+        }
+    }
+    @media (max-width: 420px) {
+        max-width: 100%;
     }
 }
  
@@ -31,6 +38,9 @@ header{
     display: flex;
     align-items: center;
     flex-direction: column;
+    @media (max-width: 420px) {
+        width: 370px;
+    }
 }
 .head {
     text-align: center;
@@ -42,25 +52,38 @@ header{
     letter-spacing: 0.1em;
     color: #636758;
     padding-bottom: 10%;
+    img {
+        @media (max-width: 420px) {
+            display: flex;
+        }
+    }
 }
 .total-column {
     width: 600px;
     background-color: #fff;
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
+    @media (max-width: 670px) {
+        width: 400px;
+    }
 }
 .summer {
-    background: url(../src/sheep.jpg) center/cover no-repeat;
+    background: url(../src/sheep.jpg) center center/cover no-repeat;
     height: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     max-width: 600px;
+    //border: 1px solid red;
+    @media (max-width: 670px) {
+        width: 400px;
+      }
 }
 .summer__h1 {
+    text-align: center;
     font-family: "Brandon";
     font-size: 36px;
-    line-height: 18px;
+    line-height: 36px;
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 0.14em;
@@ -81,20 +104,26 @@ header{
     text-transform: uppercase;
     letter-spacing: 0.1em;
     color: #ffffff;
+    @media (max-width: 670px) {
+        padding-bottom: 10%;
+      }
 }
 .articles {
     padding-bottom: 5%;
 }
 .articles__header {
-    font-family: ArialMT;
+    font-family: 'ARIALMT';
     font-size: 24px;
-    line-height: 18px;
+    line-height: 28px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.06em;
     color: #484a43;
     padding: 6% 0 7% 0;
     text-align: center;
+    @media (max-width: 670px) {
+        font-size: 18px;
+      }
 }
 .articles__items {
     display: flex;
@@ -102,6 +131,10 @@ header{
     justify-content: space-between;
     max-width: 540px;
     margin: 0 auto;
+    @media (max-width: 670px) {
+        justify-content: center;
+        align-content: center;
+      }
 }
 .articles__item {
     flex: 1 1 50%;
@@ -112,6 +145,9 @@ header{
 }
 .articles__item_3 {
     max-width: 540px;
+    @media (max-width: 670px) {
+        max-width: 255px;
+      }
 }
 .articles__more {
     display: flex;
@@ -135,7 +171,10 @@ header{
 .articles__more_3 {
     height: 220px;
     width: 540px;
-    background: url(../src/mask_3.jpg) 0 0/cover no-repeat;
+    background: url(../src/mask_3.jpg) center 0/cover no-repeat;
+    @media (max-width: 670px) {
+        width: 255px;
+      }
 }
 .articles__h1 {
     font-family: 'ARIALMT';
@@ -160,6 +199,9 @@ header{
     background-color: #000;
     opacity: 0.1;
     margin: 0 auto;
+    @media (max-width: 670px) {
+        width: 255px;
+      }
 }
 .articles__contacts {
     padding-top: 5%;
@@ -184,6 +226,9 @@ header{
         font-weight: 700;
         padding-bottom: 2%;
     }
+    span {
+        white-space: nowrap;
+    }
     &:last-child {
         width: 22%;
     }
@@ -194,9 +239,16 @@ header{
     line-height: 18px;
     font-weight: 700;
     color: #6d7e44;
+    @media (max-width: 670px) {
+        white-space: nowrap;
+      }
 }
 .articles__socials {
     padding-bottom: 5%;
+    a {
+        display: inline-block;
+        margin-bottom: 5%;
+    }
 }
 //.social__btn {}
 .foot {
