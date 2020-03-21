@@ -1,0 +1,205 @@
+@import "_nullstyle";
+@font-face {
+    font-family: 'Brandon';
+    src: url("../fonts/BrandonPrinted-One.eot");
+    src: local("☺"), url("../fonts/BrandonPrinted-One.woff") format("woff"), url("../fonts/BrandonPrinted-One.ttf") format("truetype"), url("../fonts/BrandonPrinted-One.svg") format("svg");
+    font-weight: normal;
+    font-style: normal; 
+  }
+  @font-face {
+	font-family: 'ARIALMT';
+	src: url('../fonts/ARIALMT.eot');
+	src: local('☺'), url('../fonts/ARIALMT.woff') format('woff'), url('../fonts/ARIALMT.ttf') format('truetype'), url('../fonts/ARIALMT.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+body {
+    background-color: #f0f2ea;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    img {
+        padding: 6% 0;
+    }
+}
+ 
+.wrapper {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.head {
+    text-align: center;
+    font-family: "ARIALMT";
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #636758;
+    padding-bottom: 10%;
+}
+.total-column {
+    max-width: 600px;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
+}
+.summer {
+    background: url(../src/sheep.jpg) center/cover no-repeat;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+}
+.summer__h1 {
+    font-family: "Brandon";
+    font-size: 36px;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: #ffffff;
+}
+.summer__line {
+    height: 1px;
+    width: 100px;
+    background-color: #fff;
+    margin: 5% 0 3% 0;
+    border-top: 1px solid #fff;
+}
+.summer__h2 {
+    font-family: ArialMT;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+}
+.articles {
+    
+}
+.articles__header {
+    font-family: ArialMT;
+    font-size: 24px;
+    line-height: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #484a43;
+    padding: 6% 0 7% 0;
+    text-align: center;
+}
+.articles__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 540px;
+    margin: 0 auto;
+}
+.articles__item {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 255px;
+}
+.articles__item_3 {
+    max-width: 540px;
+}
+.articles__more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 255px;
+    font-family: Brandon;
+    font-size: 24px;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.articles__more_1 {
+    background: url(../src/mask_1.jpg) 0 0/cover no-repeat;
+}
+.articles__more_2 {
+    background: url(../src/mask_2.jpg) 0 0/cover no-repeat;
+}
+.articles__more_3 {
+    height: 220px;
+    width: 540px;
+    background: url(../src/mask_3.jpg) 0 0/cover no-repeat;
+}
+.articles__h1 {
+    font-family: 'ARIALMT';
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 700;
+    color: #6d7e44;
+    padding: 5% 0 3% 0;
+}
+.articles__text {
+    font-family: ArialMT;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #333333;
+    padding-bottom: 5%;
+}
+
+.articles__line {
+    height: 2px;
+    width: 540px;
+    background-color: #000;
+    opacity: 0.1;
+    margin: 0 auto;
+}
+.articles__contacts {
+    padding-top: 5%;
+    margin: 0 30px;
+    max-width: 540px;
+    display: flex;
+    justify-content: space-between;
+}
+.articles__contact {
+    width: 75%;
+    font-family: ArialMT;
+    font-size: 11px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #333333;
+    
+    }
+    h3 {
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: 700;
+        padding-bottom: 2%;
+    }
+    &:last-child {
+        width: 22%;
+    }
+}
+.articles__link {
+    font-family: ArialMT;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #6d7e44;
+}
+.articles__socials {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5%;
+}
+.social__btn {
+}
+.foot {
+}
